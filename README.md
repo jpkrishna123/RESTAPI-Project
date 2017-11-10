@@ -56,22 +56,6 @@ The Micro Service use to fetch order and product information.
 ### Task 3) ###
  * Add **Spring Integration Tests** for all the `API endpoints`.
 
-### Note: You are free to refactor existing codebase to fulfil these requirements. ###
-
-Existing API Endpoints
-======================
-1) List Orders:
-   **[GET]** `http://localhost:8088/orders`
-
-2) Fetch Order Details:
-   **[GET]** `http://localhost:8088/orders/{order_id}`
-
-3) List Products:
-   **[GET]** `http://localhost:8088/products`
-
-4) Fetch Product Details:
-   **[GET]** `http://localhost:8088/products/{product_id}`
-
 Technical Information
 =====================
  * You should have Java 8, Maven and Git installed.
@@ -93,3 +77,27 @@ Tech Stack
  * Hamcrest
  * Spring Integration Tests
  
+How to Build
+==========
+
+mvn clean install
+
+How to Run
+==========
+java -jar target/orders-0.0.1-SNAPSHOT.jar
+
+URL Details
+==========
+1) List Orders:
+   **[GET]** `http://localhost:8088/orders`
+
+2) Fetch Order Details:
+   **[GET]** `http://localhost:8088/orders/{order_id}`
+
+3) List Products:
+   **[GET]** `http://localhost:8088/products`
+
+4) Fetch Product Details:
+   **[GET]** `http://localhost:8088/products/{product_id}`
+
+Note: post man collections was checked into docs folder
