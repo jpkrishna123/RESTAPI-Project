@@ -1,0 +1,217 @@
+{
+	"variables": [],
+	"info": {
+		"name": "RESTAPI-Project",
+		"_postman_id": "739b9e36-46cb-2a9a-87e5-9ccf87765b23",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get-Orders",
+			"request": {
+				"url": "http://localhost:8088/orders",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "token",
+						"value": "",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n 'status': success,\n  'msg': 'created successfuly' \n}                                                  "
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get-OrdersByID",
+			"request": {
+				"url": "http://localhost:8088/orders/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get-Products",
+			"request": {
+				"url": "http://localhost:8088/products",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get-ProductsByID",
+			"request": {
+				"url": "http://localhost:8088/products/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search-Order-ByStatus",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8088/search/orders?fieldName=status&value=SHIPPED",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"search",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "fieldName",
+							"value": "status",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "value",
+							"value": "SHIPPED",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search-Order-ByDiscount",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8088/search/orders?fieldName=discount&value=15.50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"search",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "fieldName",
+							"value": "discount",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "value",
+							"value": "15.50",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search-Order-ByProductCount",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8088/search/orders?fieldName=productcounts&value=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"search",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "fieldName",
+							"value": "productcounts",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "value",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search-Products-ByPrice",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8088/search/products?fieldName=price&value=25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"search",
+						"products"
+					],
+					"query": [
+						{
+							"key": "fieldName",
+							"value": "price",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "value",
+							"value": "25",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
