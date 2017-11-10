@@ -1,6 +1,5 @@
-Objective
-=========
-A fictional client has an existing Micro Service to fetch order and product information. 
+
+A Sample Micro Service application to fetch order and product information. 
 
 Requirements
 ============
